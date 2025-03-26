@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.apply-box {
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    margin: 60px auto 0;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+    border-radius: 10px;
+}
+
+.small-title {
+    font-size: 20px;
+}
+
+/* Form Container with Grid */
+.form-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between grid items */
+}
+
+/* Pincode, Date, and Upload CV stay in the first column */
+.pincode,
+.date,
+.upload {
+    grid-column: 1; /* Stick to the left column */
+}
+
+/* Other fields span both columns */
+.name,
+.email,
+.address {
+    grid-column: span 2; /* Span across both columns */
+}
+
+/* Common Form Control Styling */
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    width: 100%;
+}
+
+input:focus {
+    outline: 2px solid red;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    margin-top: 70px;
+   justify-content: center;
+}
+
+button {
+    background-color: red;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkred;
+}
